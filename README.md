@@ -1,2 +1,0 @@
-# MaritimeResourceName
-Maritime Resource Name
