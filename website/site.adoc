@@ -1,0 +1,55 @@
+:doctype: book
+2	:compat-mode:
+3	:page-layout!:
+4	:toc: right
+5	:toclevels: 2
+6	:sectanchors:
+7	:sectlinks:
+8	:sectnums:
+9	:linkattrs:
+10	:icons: font
+11	:source-highlighter: coderay
+12	:source-language: asciidoc
+13	:experimental:
+14	:stem:
+15	:idprefix:
+16	:idseparator: -
+17	:ast: &ast;
+18	:dagger: pass:normal[^&dagger;^]
+19	:y: icon:check[role="green"]
+20	:n: icon:times[role="red"]
+21	:c: icon:file-text-o[role="blue"]
+22	:table-caption!:
+23	:example-caption!:
+24	:figure-caption!:
+25	:imagesdir: ../images
+26	:includedir: _includes
+27	:underscore: _
+28	:icons: font
+29	
+30	
+31	= Maritime Resource Names
+32	
+33	Okay
+34	////
+35	<<<
+36	include::01introduction.adoc[]
+37	
+38	<<<
+39	include::02Requirements.adoc[]
+40	
+41	<<<
+42	include::03URI.adoc[]
+43	
+44	<<<
+45	include::04MRN.adoc[]
+46	
+47	<<<
+48	include::05MaritimeCloud.adoc[]
+49	
+50	<<<
+51	include::06Discussion.adoc[]
+52	
+53	<<<
+54	include::07Conclusion.adoc[]
+55	////
