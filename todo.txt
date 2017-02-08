@@ -1,0 +1,20 @@
+
+Specification
++ Lav Specifications template
+     Introduce Organization ID
++ Cleanup Examples
+
+
+Website
+* Køb domæne (www.@mvnregistry.org)
+* Setup email (info@mvnregistry.org)
+Skriv tekst paa website
+
+
+
+# Registrer hos IANA (MRN namespacet)
+
+# Noter
+https://tools.ietf.org/html/rfc3406#section-3.0
+
+Tag tekst omkring NID og lav til OID (Organization id)

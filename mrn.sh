@@ -9,8 +9,9 @@ if [ "$1" = "pdf" ]; then
 elif [ "$1" = "mmark" ]; then   
    rm -rf target/ 
    mkdir target
-
-   ./mrn/mmark -xml2 -page mrn/mrn.md > target/x.xml 
+   cd mrn
+   ./mmark -xml2 -page mrn.md > ../target/x.xml
+   cd .. 
    xml2rfc --text target/x.xml
    rm target/x.xml
    mv target/x.txt target/mrn.txt
@@ -59,4 +60,4 @@ fi
 
 echo "  pdf        Generates documentation in pdf"
 echo "  html       Generates documentation in html"
-echo "  site       Generates and updates mrn.maritimecloud.netdocumentation in html"
+echo "  site       Generates and updates mrn.maritimecloud.net documentation in html"

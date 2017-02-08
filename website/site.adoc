@@ -29,27 +29,19 @@
 
 
 = Maritime Resource Names
+This website contains information about Maritime Resource Names.
 
-Okay
-////
-<<<
-include::01introduction.adoc[]
+Besides this website there are two Google Groups where ongoing discussion about Maritime Resource Names take place.
+They are currently used for developing the actual standard. But once the standard is in place they will be used as a platform for the application of MRNs throughout the industry. 
 
-<<<
-include::02Requirements.adoc[]
+== Persistent identifiers
+Persistent global identifiers are needed in order to maintain data object identity as data objects pass through the data chain, are stored in different data stores, transformed to different formats, and re-purposed for different domains. The same chunk of information may be present in different data stores in different formats (ISO 8211, XML, relational database record, etc.). Using a single identifier for the same chunk of data in all formats and stores will obviously help harmonization, validation, and tracking of data across multiple application domains and at different places in the data supply chain. Similarly, for data integration, especially references to features in a different data product and data set from the referring feature, require persistent identity. 
 
-<<<
-include::03URI.adoc[]
+Uniform Resource Names (URN) as defined by the IETF (Internet Engineering Task Force, who have standardized protocols like IP, http, FTP and other Internet protocols) are intended to serve as persistent, location-independent, resource identifiers and are designed to make it easy to map other namespaces (which share the properties of URNs) into URN-space. Therefore, the URN syntax provides a means to encode character data in a form that can be sent in existing protocols, transcribed on most keyboards, etc. 
 
-<<<
-include::04MRN.adoc[]
-	
-<<<
-include::05MaritimeCloud.adoc[]
+The URN syntax provides a mechanism to ensure the uniqueness of the name of a resource, which is already widely used in different domains such as supply chain management, unique identification of books or laws. 
 
-<<<
-include::06Discussion.adoc[]
+The work of this guideline describes how the URN methodology is applied to identifying maritime resources within a Maritime Resource Name (MRN). This syntax allows decentralization of the management of identities. It is envisaged that already existing numbering schemes can relatively easily be fitted into this syntax, providing backwards compatibility, while the syntax is extendable to new areas of application.
 
-<<<
-include::07Conclusion.adoc[]
-////
+== Google Groups
+All communication regarding the development of the standard is done through two google groups:
