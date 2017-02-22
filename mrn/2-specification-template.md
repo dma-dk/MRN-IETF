@@ -28,35 +28,25 @@ Declared Registrant of the Namespace
  - http://www.mrnregistry.org/
 
 
-
 Declaration of structure:
 
       The Namespace Specific String (NSS) of all URNs that use the
       "mrn" NID shall have the following structure:
 
-      <URN> ::= "urn:" "mrn" ":" <NSS>
+      <URN>   ::= "urn:mrn:" <OID> ":" <OSS>
 
-      <NSS> ::= <OID> ":" <OSS>
+      <OID>   ::= 1*(ALPHA / DIGIT) ; Organizational ID
 
-      <OID> ::= 1*<non-colon-chars> ; Organization ID
+      <OSS>   ::= <OSNID> ":" <OSNS> ; Organizational specific string
+                
+      <OSNID> ::= 1*(ALPHA / DIGIT / "-") 
+                  ; Organizational specific namespace ID
 
-      <OSS> ::= <OSNID> ":" <organization-specific-namespace-string>
-      
-      <OSNID> ::= 1*<non-colon-chars> ; Organization specific namespace ID
+      <OSNS>  ::= 1*<URN chars> ; Organizational specific namespace string
 
-      <organization-specific-namespace-string> ::= 1*<URN chars>
+      DIGIT   ::= %x30-39 ; 0-9
 
-      <non-colon-chars> ::= <non-colon-trans> | "%" <hex> <hex>
-
-      <non-colon-trans> ::= <upper> | <lower> | <number> |
-                            <non-colon-other>
-
-      <non-colon-other> ::= "(" | ")" | "+" | "," | "-" | "." | "=" |
-                            "@" | ";" | "$" | "_" | "!" | "*" | "'"
-                            
-      DIGIT         = %x30-39 ; 0-9
-
-      ALPHA         = %x41-5A / %x61-7A ; A-Z / a-z
+      ALPHA   ::= %x61-7A ; a-z
 
       Basics of the ABNF notation used :
 
@@ -65,8 +55,6 @@ Declaration of structure:
 
        /   alternatives
 
-       []  indicates an optional rule
-
        ()  indicates a sequence group, used as a single alternative or as a
            single repeating group
 
@@ -74,23 +62,16 @@ Declaration of structure:
                 least <a> and at most <b> times; default values are 0 and
               infinity, respectively
 
-       ;   comment                      
-
-Organization Name
-A minimum of three letters
-
-
-
+       ;   comment  
+       
+       <URN chars>  As defined in [@!RFC2141]                    
 
 Relevant ancillary documentation:
-: <br/>  The standards that define the EPCglobal Architecture Framework
-         and the processes for creating new sub-namespaces are managed
-         by EPCglobal, Inc. and can be found on its website.  Several
-         sub-namespaces are defined in the "EPC Tag Data Standards" [5].
-
+: <br/>  The process for assigning unique organizational IDs is managed by IALA.
+         Details and application process can be found at http://www.mvnregistry.org.
 
 Identifier uniqueness considerations:
-: <br/>Guaranteeing uniqueness is a two way process. First, IALA will guarantee that each
+: <br/>Guaranteeing uniqueness is a two-way process. First, IALA will guarantee that each
        organization will be assigned a unique organizational id that will never be reused.
        Second, each organization must guarantee that they do not assign identical organizational
        specific strings (OSS).
@@ -113,7 +94,7 @@ Process of identifier resolution:
          all or part of the URNs assigned under their organizational id.
 
 Rules for Lexical Equivalence:
-: <br/>The entire URN is case insensitive.
+: <br/>  The entire URN is case insensitive.
 
 
 Conformity with URN syntax:
@@ -122,9 +103,8 @@ Conformity with URN syntax:
 
 Validation mechanism:
 : <br/>  In the case of each sub-namespace, there will be namespace-
-         specific rules for determining validity.  In each case, the
-         reader is referred to the appropriate MRN registry maintained
-         documentation.
+         specific rules for determining validity. There are no plans to
+         provide a central repository for these rules.
 
 Scope:
 : <br/>Global.

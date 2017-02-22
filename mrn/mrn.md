@@ -17,9 +17,9 @@
       [author.address]
       email = "kasperni@gmail.com"
       [author.address.postal]
-      street = "Sankt Annae Plads 10A, 4"
-      city = "Copenhagen"
-      code = "1250"
+      street = "Carl Jacobsens Vej 31"
+      code = "2500 Valby" 
+      country = "Denmark"
 
 %%%
 
@@ -32,14 +32,6 @@ the International Association of Lighthouse Authorities (IALA AISM).
 {mainmatter}
 
 {{1-introduction.md}}
-
-
-# Terminology
-The key words "MUST", "MUST NOT", "REQUIR ED", "SHALL", "SHALL NOT",
-"SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
-"OPTIONAL" in this document are to be interpreted as described in
-[@!RFC2119].
-
 {{2-specification-template.md}}
 {{3-examples.md}}
 {{4-namespace-considerations.md}}
