@@ -68,7 +68,7 @@ Declaration of structure:
 
 Relevant ancillary documentation:
 : <br/>  The process for assigning unique organizational IDs is managed by IALA.
-         Details and application process can be found at http://www.mvnregistry.org.
+         Details and application process can be found at http://www.mrnregistry.org.
 
 Identifier uniqueness considerations:
 : <br/>Guaranteeing uniqueness is a two-way process. First, IALA will guarantee that each

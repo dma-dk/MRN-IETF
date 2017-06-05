@@ -13,7 +13,7 @@ elif [ "$1" = "mmark" ]; then
    ./mmark -xml2 -page mrn.md > ../target/x.xml
    cd .. 
    xml2rfc --text target/x.xml
-   rm target/x.xml
+ #  rm target/x.xml
    mv target/x.txt target/mrn.txt
    exit
 elif [ "$1" = "html" ]; then
