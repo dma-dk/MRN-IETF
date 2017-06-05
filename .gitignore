@@ -8,3 +8,5 @@ target
 .DS_Store
 *IgnoreMe*
 *ignoreme*
+/ietf/draft-mrn.txt
+/ietf/draft-mrn.xml
