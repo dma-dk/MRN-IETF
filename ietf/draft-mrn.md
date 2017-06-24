@@ -3,7 +3,7 @@
     Title = "Maritime Resource Names (MRN)"
     abbrev = "Maritime Resource Names (MRN)"
     category = "info"
-    docName = "draft-knielsen-mrn-urn-00"
+    docName = "draft-knielsen-mrn-urn-01"
     ipr= "trust200902"
     area = "Internet"
     workgroup = "Network Working Group"
