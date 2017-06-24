@@ -1,4 +1,5 @@
 /private
+/edited
 /bin
 target
 .checkstyle
@@ -10,3 +11,5 @@ target
 *ignoreme*
 /ietf/draft-mrn.txt
 /ietf/draft-mrn.xml
+/draft-mrn.txt
+/draft-mrn.xml
