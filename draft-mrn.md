@@ -3,7 +3,7 @@
     Title = "Maritime Resource Names (MRN)"
     abbrev = "Maritime Resource Names (MRN)"
     category = "info"
-    docName = "draft-knielsen-mrn-urn-01"
+    docName = "draft-knielsen-mrn-urn-02"
     ipr= "trust200902"
     area = "Internet"
     workgroup = "Network Working Group"
@@ -25,9 +25,11 @@
 
 .# Abstract
 
-This document describes a Uniform Resource Name (URN) namespace
-intended for persistently and uniquely naming maritime resources. published by
-the International Association of Lighthouse Authorities (IALA AISM).
+   This document describes a Uniform Resource Name (URN) namespace
+   for persistently and uniquely naming maritime resources
+   published by the International Association of Marine Aids to Navigation 
+   and Lighthouse Authorities (IALA AISM).
+
 
 {mainmatter}
 

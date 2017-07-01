@@ -1,60 +1,62 @@
 # Examples
 
-   All the examples provided in the following section are hypothetical
-   examples.  Real world naming schemes will most likely look different.
+   All the examples provided in this section are hypothetical.
+   Real world naming schemes will most likely look different.
 
-   Using the MRN identifier scheme a vessel with an IMO number of 9743368 could be identified as
-   follows:
+   Using the MRN identifier scheme, a vessel with an IMO number of
+   9743368 could be identified as follows:
 
    >  urn:mrn:imo:imo-number:9743368
 
-   The governing organization of how to assign IMO numbers is the
-   International Maritime Organization (IMO).  IMO may have delegated
-   the actual assignment of numbers to another organization.  But IMO is
-   still the organization who has determined that an IMO number is an
-   unique seven-digit number. Within the context of maritime resource names the organizational id
-   (OID) refers to the organization who governs the syntax and rules of
-   a particular resource type.  In the above case the organizational ID
-   is "imo".
+   The governing organization that assigns IMO numbers is the
+   International Maritime Organization (IMO).  IMO may delegate the
+   actual assignment of numbers to another organization, but it is still
+   the organization that determines that an IMO number is unique.
+   Within the context of maritime resource names, the organization ID
+   (OID) refers to the organization that governs the syntax and rules of
+   a particular resource type.  In the example above, the organization
+   ID is "imo".
 
-   Each organization further divides the organizational specific string
-   (OSS), which is the part following "imo", into two parts.  An
-   organizational specific namespace ID (OSNID) which is a unique
-   identifier within the governing organization for a particular type of
-   resource. In this example, we have used "imo-number" but it could
-   just as well have been "imonumber" or just "number".
+   Each organization further divides the organization-specific string
+   (OSS), which is the part following "imo", into two parts.
 
-   The second part is the organizational specific namespace string
-   (OSNS).  Which is the only part that differs for resources of the
-   same type, in this case it is "9743368".  The organizational specific
-   namespace string is (as the name implies) specific for a combination of a
-   OID and OSNID.  In this case the organizational specific namespace
-   string is always a 7 digit IMO number.
-   
-   Another way to identify the same vessel might be to use its MMSI number.
-   Here the identifier could look like this:
+   The first part is an organization-specific namespace ID (OSNID),
+   which is a unique identifier within the governing organization for a
+   particular type of resource.  In this example, we have used "imo-
+   number," but this could just as well have been "imonumber" or even 
+   simply "number".
+
+  The second part is the organization-specific namespace string (OSNS).
+   This is the only part that differs for resources of the same type; in
+   this case it is "9743368".  The organization-specific namespace
+   string is, as the name implies, specific to a particular combination
+   of OID and OSNID.  In this case, the organization-specific namespace
+   string is always a 7-digit IMO number.
+
+   Another way to identify the same vessel might be to use its MMSI
+   number.  Here the identifier could look like this:
 
    > urn:mrn:itu:mmsi:538070999
 
    In this case ITU is the governing body because MMSI numbers are based
-   on recommendation M.585 from ITU.  It might be that national bodies
-   does the actual assignment of MMSI numbers, but ITU is the governing
-   body for the standardization of MMSI numbers.
+   on ITU recommendation M.585. It is possible that national
+   bodies might do the actual assignment of MMSI numbers, but ITU is the
+   governing body for the standardization of MMSI numbers.
 
-   As can be seen from these two examples.  The same vessel can be
-   identified by multiple different identifiers.  This is no different
-   to a person who might be identified either by his driver license
-   number or his social security id.  Multiple identities can identify
-   the same entity.  Some parameters frequently used for identification,
-   such as 'names of people', do most of the time qualify as
-   identifiers, as they are not guaranteed to be unique.  A single
-   identifier must refer to one and only one identity.
+   These two examples show how multiple identities can identify the same
+   entity; in this case, the same vessel can be identified by either an
+   IMO number or MMSI number.  This is similar to how an individual
+   might be identified either by a driver license number or a social
+   security ID.  Note that some parameters that are frequently used for
+   identification, such as human names, do not generally qualify as
+   identifiers because they are not guaranteed to be unique.  A single
+   identifier must refer to one and only one entity.
 
-   The concept of URNs can be taken from a very coarse grained level to
-   a very fine grained level.  For example, a container ship might be
-   identified by one of the two previous URL's.  The containers aboard
-   the ship might be identified with an URN adapting the ISO 6346
-   identifier scheme for container ids.
+   URNs range from very coarse-grained to very fine-grained.
+   For example, a container ship might be identified by one of the two
+   previous URNs.  The containers aboard the ship might be identified
+   with an URN adapting the ISO 6346 identifier scheme for container
+   ids.
 
    > urn:mrn:bic:container-id:csqu3054383
 
@@ -62,60 +64,58 @@
    by another URN scheme.  It might even be possible to integrate with
    URNs defined outside of the urn:mrn namespace.  For example, all
    items in a container might be identified by an electronic product
-   code ([@!RFC5134]).  In other words, the usage of URNs as identifiers
-   are not limited to those defined within this document.  In the future
+   code ([@!RFC5134]).  In other words, the use of URNs as identifiers is
+   not limited to those defined within this document.  In the future,
    other non-maritime sectors might even adopt similar naming schemes
    based on URNs to facilitate easier integration across sector
    boundaries.
 
-   An identifier does not need to be a physical object, but can be a
-   virtual item such as an electronic document.  For example, IMO might
-   decide that all of their documents would use a "publications" prefix.
-   So
+   As mentioned earlier, an identifier does not need to be a physical
+   object; it can be a virtual item such as an electronic document.  For
+   example, IMO might decide that all of their documents should use a
+   "publications" prefix.  The publication "IMO SOLAS Consolidated
+   Spanish Edition, 2014 IF110S" might be referred to as:
     
    > urn:mrn:imo:publications:if110s
     
-   would refer to the publication "IMO SOLAS Consolidated Spanish
-   Edition, 2014 IF110S"
-
-   On the other hand an organization such as IALA might decide that all
-   of their publications would follow another format where the category
-   of the publication is included in the identifier.  For example, a
-   recommendation could be
+   On the other hand, an organization such as IALA might decide that
+   their publications should follow another format where the category of
+   the publication is included in the identifier.  For example, a
+   recommendation could be:
    
    > urn:mrn:iala:publications:recommendation:e-nav-140 
 
-   while the identifier of a guideline might be written as
+   The identifier of a guideline might be written as:
 
    > urn:mrn:iala:publications:guideline:synchronisation-of-lights-1069
 
-   As can be seen from the previous example the Organizational specific
-   namespace string can be split into multiple hierarchies.  It is all
-   up to the governing organization how they want to structure their
+   As can be seen from the previous example, the organization-specific
+   namespace string can be split into multiple hierarchies.  The
+   governing organization can decide how it wants to structure its
    identifiers.
 
-   Another example of identifiers with multiple hierarchies could be an
-   identifier scheme for lights and buoys.  Here IALA could choose to
-   let the OSNS consist of \<CountryCode\>:\<National Identifier\>.  For
-   example
+   Another example of identifiers with multiple hierarchies could be
+   seen in an identifier scheme for lights and buoys.  Here IALA could
+   choose to let the OSNS consist of \<CountryCode\>:\<National Identifier\>. For
+   example:
    
    > urn:mrn:iala:aton:us:1234x5
 
-   There are no requirements that organizations are permanent entities.
-   For example, the European STM Validation project could choose to use
-   "stm" as their organizational id.  So, for example, a voyage id in
-   this project might look like
+   There are no requirements that organizations be permanent entities.
+   For example, the European STM Validation Project could choose to use
+   "stm" as its organization ID.  A voyage ID in this project might look
+   like this:
    
    > urn:mrn:stm:voyage:id:xcus231230 
    
-   Internally in the project they can use xcus231230 to refer to a
-   voyage plan.  But when working with external systems or other
-   projects the full URN can be used in case other projects uses another
-   type of identifier for a particular voyage.
+   Within the project, the group may use "xcus231230" to refer to a
+   voyage plan.  However, the full URN can be used when working with
+   external systems or other projects, in case another type of
+   identifier is also used for a particular voyage.
 
-   As can be seen from all these examples.  The scheme is highly
-   adaptable.  Each organization can choose their own layout for a
-   specific type of identifiers.  It is easy to fit existing identifiers
-   into the naming scheme.  And it provides good context information
-   about the type of the identifier in comparison to something simple
-   like a random UUID.
+   As can be seen from all of these examples, the scheme is highly
+   adaptable.  Each organization can choose its own layout for a
+   specific type of identifier.  It is easy to fit existing identifiers
+   into the naming scheme, and it provides good context information
+   about the type of the identifier, unlike something simple such as a
+   random UUID.
