@@ -33,12 +33,7 @@
 
 {mainmatter}
 
-{{1-introduction.md}}
-{{2-specification-template.md}}
-{{3-examples.md}}
-{{4-namespace-considerations.md}}
-{{5-community-considerations.md}}
-{{6-security-considerations.md}}
-{{7-iana-considerations.md}}
+
+{{8-new.md}}
 
 {backmatter}

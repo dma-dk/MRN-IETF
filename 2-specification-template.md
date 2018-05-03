@@ -1,7 +1,10 @@
 # Specification Template
 
-Namespace ID
+Namespace Identifier
 : <br/>"mrn"
+
+Version
+: 1
 
 Registration Information
 : 
@@ -49,6 +52,20 @@ Declaration of structure:
 
       ALPHA   ::= %x61-7A ; a-z
 
+
+      <MRN>   ::= "urn" ":" "mrn" ":" <OID> ":" <OSS>
+                  [ rq-components ]
+                  [ "#" f-component ]
+                  
+      <OID>   ::= (alphanum) 0*20(alphanum / "-") (alphanum) ; Organization ID
+
+      <OSS>   ::= <OSNID> ":" <OSNS> ; Organization-specific string
+                
+      <OSNID> ::= (alphanum) 0*20(alphanum / "-") (alphanum) 
+                  ; Organization-specific namespace ID
+
+      <OSNS>  ::= pchar *(pchar / "/") ; Organization-specific namespace string
+      
       Basics of the ABNF notation used:
 
        " " literals (terminal character strings); terms not in quotes are
